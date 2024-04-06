@@ -1,0 +1,219 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+    border-radius: 10px ;
+} 
+
+li {
+    list-style: none;
+}  
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.header{
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(255,253, 241);
+    border-radius: 0;
+}
+
+.header .logo{
+    margin-left: 180px;
+    height: 50px;
+}
+
+.header form{
+    position: absolute;
+    top: 8px;
+    left: 600px;
+    border: 2px solid black;
+    border-radius: 0;
+    width: 500px;
+    height: 34px;
+}
+
+.header form input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 0;
+    outline: none;
+    border-radius: 0;
+    padding-left: 15px;
+    width: 470px;
+    height: 30px;
+}
+
+.header form button{
+    cursor: pointer;
+    /* float: right; */
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 0;
+    border-radius: 0;
+    width: 30px;
+    height: 30px;
+    background-image: url(../images/search_1.png);
+}
+
+.header  form input::placeholder{
+    font-size: 12px;
+    color: #bfbfbf;
+}
+ 
+.header input::after{
+    content: " ";
+    background-image: url(../images/search_1.png);
+}
+
+.header ul{
+    position: absolute;
+    left: 300px;
+    top: 15px;
+}
+
+.header ul li{
+    /* position: absolute; */
+    /* display: inline-block; */
+    float: left;
+    margin-right: 20px;
+}
+.header ul li:last-child{
+    margin-right: 0;
+}
+
+.header .username1{
+    position: absolute;
+    margin-left: 920px;
+    margin-top: 5px;
+    border-radius: 50%;
+    width: 40px;
+}
+
+.header .username{
+    /* display: block; */
+    /* float: left; */
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 980px;
+    background-color: white;
+}
+
+body{
+    overflow: auto;
+    background-color: rgba(244, 244, 244, 1);
+}
+
+.body{
+    margin: 60px auto 0;
+    width: 1200px;
+    /* height: 1000px; */
+    background-color: white;
+}
+
+.body h1{
+    margin-bottom: 10px;
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(255, 241, 181);
+    color: rgb(222, 154, 072);
+}
+
+.writting{
+    float: left;
+    width: 800px;
+    height: 600px;
+    background-color: white;
+}
+
+.writting{
+    padding: 20px;
+}
+
+.writting .jiaobiao{
+    margin-bottom: 5px;
+    margin-right: 2px;
+    vertical-align:middle;
+    display: inline-block;
+    height: 30px;
+    width: 5px;
+    background-color: green;
+}
+
+.writting h2{
+    margin-bottom: 10px;
+    vertical-align:middle;
+    display: inline-block;
+    font-size: 25px;
+}
+
+.writting p{
+    text-indent: 2em;
+}
+
+.introduction{
+    float: right;
+    width: 360px;
+    height: 580px;
+    background-color: rgb(255, 241, 181);
+}
+
+.jieshaotu{
+    margin: 20px auto 0;
+    width: 320px;
+    height: 300px;
+    background-color: white;
+}
+
+.jieshaotu img{
+    width: 320px;
+}
+
+.introduction .brief{
+    margin: 5px auto 0;
+    width: 320px;
+    background-color:  rgb(241, 192, 133);
+    text-align: center;
+    font-weight: 700;
+    color: rgb(106, 052, 034);
+}
+
+.introduction ul{
+    padding-top: 10px;
+    padding-left: 10px;
+    margin: 5px auto 0;
+    width: 320px;
+    height: 220px;
+    background-color: rgb(255, 241, 181);
+}
+
+.introduction ul li{
+    margin-bottom: 3px;
+    height: 25px;
+}
+
+.introduction ul span{
+    display: inline-block;
+    border-radius: 0;
+    border: 1px solid rgb(079, 061, 050);
+    width: 120px;
+    height: 25px;
+    background-color: rgb(241, 192, 133);
+    line-height: 25px;
+    text-align: center;
+    font-size: 14px;
+    color: rgb(106, 052, 034);
+}
+
+.introduction ul .answer{
+    width: 180px;
+    background-color: rgb(255, 249, 238);
+}

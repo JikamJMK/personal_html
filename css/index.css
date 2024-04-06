@@ -1,0 +1,478 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+    border-radius: 10px ;
+} 
+
+li {
+    list-style: none;
+}  
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.header{
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(255,253, 241);
+    border-radius: 0;
+}
+
+.header .logo{
+    margin-left: 180px;
+    height: 50px;
+}
+
+.header form{
+    position: absolute;
+    top: 8px;
+    left: 600px;
+    border: 2px solid black;
+    border-radius: 0;
+    width: 500px;
+    height: 34px;
+}
+
+.header form input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 0;
+    outline: none;
+    border-radius: 0;
+    padding-left: 15px;
+    width: 470px;
+    height: 30px;
+}
+
+.header form button{
+    cursor: pointer;
+    /* float: right; */
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 0;
+    border-radius: 0;
+    width: 30px;
+    height: 30px;
+    background-image: url(../images/search_1.png);
+}
+
+.header  form input::placeholder{
+    font-size: 12px;
+    color: #bfbfbf;
+}
+ 
+.header input::after{
+    content: " ";
+    background-image: url(../images/search_1.png);
+}
+
+.header ul{
+    position: absolute;
+    left: 300px;
+    top: 15px;
+}
+
+.header ul li{
+    /* position: absolute; */
+    /* display: inline-block; */
+    float: left;
+    margin-right: 20px;
+}
+.header ul li:last-child{
+    margin-right: 0;
+}
+
+.header .username1{
+    position: absolute;
+    margin-left: 920px;
+    margin-top: 5px;
+    border-radius: 50%;
+    width: 40px;
+}
+
+.header .username{
+    /* display: block; */
+    /* float: left; */
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 980px;
+    background-color: white;
+}
+
+body{
+    overflow: auto;
+    background-color: rgba(244, 244, 244, 1);
+}
+
+.toutu{
+    width: 1200px;
+}
+
+.body{
+    margin: 60px auto 0;
+    width: 1200px;
+    /* height: 1000px; */
+    background-color: white;
+}
+.toutu{
+    position: relative;
+    margin-bottom: 15px;
+    width: 100%;
+    height: 200px;
+    background-color: skyblue;
+    /* border-radius: 10px 10px 0 0; */
+}
+
+.toutu:hover .pa{
+    display: inline;
+}
+
+.pa{
+    display:none ;
+    position: absolute;
+    z-index: 1;
+    top: 150px;
+    margin-left: -300px;
+    width: 300px;
+}
+
+.background{
+    width: 100%;
+    /* height: 300px; */
+    border: 2px solid rgb(136, 141, 163);
+    overflow: hidden;
+}
+.title1{
+    margin-bottom: 5px;
+    height: 50px;
+    width: 100%;
+    background-color: rgb(240, 235, 236);
+}
+.title1 span{
+    display: inline-block;
+    width: 100%;
+    line-height: 50px;
+    text-align: center;
+    color: rgb(090, 100, 127);
+}
+
+.story1{
+    position: relative;
+    margin-left: 20px;
+}
+
+.story1 .worldname1{
+    display: inline-block;
+    padding: 55px 0;
+    border-radius: 10px 0 0 10px;
+    width: 200px;
+    height: 160px;
+    background-color: rgb(255, 235, 210);
+    text-align: center;
+    color: rgb(165, 132, 133);
+}
+
+.story1 .worldlevel1{
+    display: inline-block;
+    position: absolute;
+    border-radius: 0;
+    height: 80px;
+    width: 100px;
+    background-color: rgb(245, 236, 224);
+    text-align: center;
+    line-height: 80px;
+    color: rgb(132, 084, 086);
+}
+
+.story1 .worldlevel2{
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    border-radius: 0;
+    height: 80px;
+    width: 100px;
+    background-color: rgb(230, 231, 240);
+    text-align: center;
+    line-height: 80px;
+    color: rgb(089, 102, 144);
+}
+
+.story1 .worldcontent1{
+    position: absolute;
+    left: 300px;
+    display: inline-block;
+    border-radius: 0 10px 10px 0;
+    width: 860px;
+    height: 80px;
+    background-color: white;
+}
+
+.story1 .worldcontent1 li{
+    display: inline-block;
+}
+
+.story1 .worldcontent1 li a{
+    display: inline-block;
+    border-radius: 0;
+    border-right: 2px solid rgb(236, 236, 243);
+    /* border-left: 2px solid #000; */
+    width: 160px;
+    text-align: center;
+    line-height: 80px;
+    color: rgb(153, 156, 165);
+}
+
+.story1 .worldname01:hover{
+    color: white;
+    background-size: 160px;
+    background-image: url(../images/worldname01.png);
+}
+
+.story1 .worldname02:hover{
+    color: blue;
+    background-size: 160px;
+    background-image: url(../images/worldname02.png);
+}
+
+.story1 .worldname03:hover{
+    color: rgb(023, 028, 046);
+    background-size: 160px;
+    background-image: url(../images/worldname03.png);
+}
+
+.story1 .worldname04:hover{
+    color: rgb(000, 072, 000);
+    background-size: 160px;
+    background-image: url(../images/worldname04.png);
+}
+
+.story1 .worldname05:hover{
+    color: black;
+    background-size: 160px;
+    background-image: url(../images/worldname05.png);
+}
+
+.story1 .worldname06:hover{
+    color: white;
+    background-size: 420px;
+    background-image: url(../images/worldname06.png);
+}
+
+.story1 .worldname07:hover{
+    color: rgb(255, 185, 106);
+    background-size: 420px;
+    background-image: url(../images/worldname07.png);
+}
+
+.story1 .worldcontent2{
+    position: absolute;
+    top: 80px;
+    left: 300px;
+    display: inline-block;
+    border-radius: 0 10px 10px 0;
+    width: 860px;
+    height: 80px;
+    background-color: white;
+}
+
+.story1 .worldcontent2 li{
+    display: inline-block;
+}
+
+
+.story1 .worldcontent2 li a{
+    display: inline-block;
+    border-radius: 0;
+    border-top: 2px solid rgb(236, 236, 243);
+    border-right: 2px solid rgb(236, 236, 243);
+    /* border-left: 2px solid #000; */
+    width: 420px;
+    text-align: center;
+    line-height: 80px;
+    color: rgb(153, 156, 165);
+}
+
+.story2{
+    position: relative;
+    margin-top: 5px;
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+
+.story2 .worldname2{
+    display: inline-block;
+    padding: 10px 0;
+    border-radius: 10px 0 0 10px;
+    width: 200px;
+    height: 60px;
+    background-color: rgb(255, 218, 210);
+    text-align: center;
+    color: rgb(132, 084, 086);
+}
+
+.story2 a{
+    position: absolute;
+    left: 200px;
+    display: inline-block;
+    border-radius: 0 10px 10px 0;
+    width: 960px;
+    height: 60px;
+    background-color: rgb(232, 247, 233);
+    text-align: center;
+    line-height: 60px;
+    color: rgb(112, 155, 105);
+}
+
+.character{
+    margin: 15px auto;
+    border: 2px solid rgb(136, 141, 163);
+    width: 1200px;
+    padding-bottom: 20px;
+    /* height: 400px; */
+    /* background-color: pink; */
+}
+
+.species ul li{
+    position: relative;
+    display: block;
+    margin: 0 auto 2px;
+    /* padding: 10px 0; */
+    border-radius: 10px;
+    width: 1160px;
+    height: 60px;
+    background-color: white;
+    /* text-align: center; */
+}
+
+.species ul li .speciesname{
+    display: inline-block;
+    left: 0;
+    padding: 20px 0;
+    border-radius: 10px 0 0 10px;
+    width:200px;
+    height: 60px;
+    background-color: rgb(255, 241, 181);
+    text-align: center;
+    color: rgb(222, 154, 072);
+}
+
+.charactername{
+    color: rgb(222, 154, 072);
+}
+
+.species ul li a{
+    color: rgb(222, 154, 072);
+}
+
+.backgroundcolor1{
+    position: absolute;
+    top: 0;
+    left: 200px;
+    border-radius: 0 10px 10px 0;
+    width: 960px;
+    height: 60px;
+    background-color: rgb(255, 249, 222);
+}
+
+.backgroundcolor2{
+    position: absolute;
+    top: 0;
+    left: 200px;
+    border-radius: 0 10px 10px 0;
+    width: 960px;
+    height: 60px;
+}
+
+.tail{
+    overflow: hidden;
+    margin: 20px auto 0;
+    width: 1200px;
+    /* height: 1000px; */
+    background-color: white;
+}
+
+.help{
+    float: left;
+    margin-top: 20px;
+    margin-left: 150px;
+    background-color: white;
+}
+
+.help dl{
+    /* padding-top: 20px; */
+    /* padding-bottom: 20px; */
+    border: 2px solid rgb(136, 141, 163);
+}
+
+.help dl dd{
+    margin-bottom: 5px;
+    width: 150px;
+    /* height: 40px; */
+    background-color: whitesmoke;
+    text-align: center;
+    /* line-height: 40px; */
+    font-size: 12px;
+    color: rgb(130, 133, 145);
+}
+
+.help dl dt{
+    /* margin-bottom: 5px; */
+    width: 150px;
+    /* height: 40px; */
+    background-color: whitesmoke;
+    text-align: center;
+    color: rgb(130, 133, 145);
+}
+
+.others{
+    float: right;
+    margin-right: 150px;
+    background-color: white;
+}
+
+.others dl{
+    /* padding-top: 20px; */
+    /* padding-bottom: 20px; */
+    border: 2px solid rgb(136, 141, 163);
+}
+
+.others dl dd{
+    margin-bottom: 5px;
+    width: 150px;
+    height: 50px;
+    background-color: whitesmoke;
+}
+
+.others dl dd a{
+    display: block;
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    color: rgb(130, 133, 145);
+}
+
+.others dl dt{
+    /* margin-bottom: 5px; */
+    width: 150px;
+    /* height: 40px; */
+    background-color: whitesmoke;
+    text-align: center;
+    color: rgb(130, 133, 145);
+}
+
+.tail .help dl dd:last-child{
+    margin-bottom: 0;
+}
+
+.tail .others dl dd:last-child{
+    margin-bottom: 0;
+}
